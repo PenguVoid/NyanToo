@@ -1,0 +1,13 @@
+ <?xml version="1.0" ?>
+
+<repositories version="0.1"> <repo priority="50" quality="experimental" status="unofficial">
+    <name>nyantoo</name>
+    <description>Personal Gentoo Overlay</description>
+    <homepage>https://github.com/PenguVoid/NyanToo</homepage>
+    <owner>
+      <email>m.stemmler96@hotmail.com</email>
+      <name>Luciana Stemmler</name>
+    </owner>
+    <source type="git">https://github.com/PenguVoid/NyanToo.git</source>
+  </repo>
+</repositories>
