@@ -38,11 +38,13 @@ src_install() {
 		*.dat \
 		*.so \
 		*.bin \
+		$FILESDIR/*svg \
 		chrome-sandbox
 
 	exeinto $destdir
 	doexe minecraft-launcher
 	dosym $destdir/minecraft-launcher /usr/bin/minecraft
 	make_desktop_entry minecraft Minecraft \
+		"/opt/minecraft-launcher/minecraft-launcher.svg" \
 		Game
 }
