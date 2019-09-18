@@ -14,7 +14,7 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE="narrator"
 MINECRAFT_BIN="minecraft-launcher"
-MINECRAFT_HOME="opt/${MINECRAFT_BIN}"
+HOME="opt/${MINECRAFT_BIN}"
 
 RDEPEND=""
 DEPEND="${RDEPEND}
