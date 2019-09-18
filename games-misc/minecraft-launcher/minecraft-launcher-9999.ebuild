@@ -13,6 +13,8 @@ LICENSE="All rights reserved"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE="narrator"
+MINECRAFT_BIN="minecraft-launcher"
+MINECRAFT_HOME="opt/${MINECRAFT_BIN}"
 
 RDEPEND=""
 DEPEND="${RDEPEND}
@@ -39,7 +41,7 @@ src_prepare() {
 	mv "${T}"/${PN}.desktop usr/share/applications/${PN}.desktop || die
 
 	sed -i \
-		-e "s|${BIN}|${PN}|g" \
+		-e "s|${MINECRAFT_BIN}|${PN}|g" \
 		usr/share/applications/${PN}.desktop || die
 
     cp \
