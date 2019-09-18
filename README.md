@@ -1,12 +1,12 @@
 Just my first take at ebuilds and a way for me to store and update some ebuilds
 
-if you wanna add my repo for whatever reason:
+If you wanna add my repo for whatever reason:
 > layman -o https://raw.githubusercontent.com/PenguVoid/NyanToo/master/repository.xml -f -a NyanToo
 
-currently in here:
+Currently in here:
 
 `net-im/discord-canary`
 `games-misc/minecraft-launcher`
 `www-client/firefox`
 
-(the firefox ebuild is a copy of the official gentoo one and is modified to work with clang and llvm v10)
+(The firefox ebuild is a copy of the official gentoo one and is modified to work with clang and llvm v10)
