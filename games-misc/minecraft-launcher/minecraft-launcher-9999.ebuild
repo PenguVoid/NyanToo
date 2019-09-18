@@ -27,6 +27,7 @@ DEPEND="${RDEPEND}
 		gnome-base/gconf
 		x11-libs/libXtst"
 
+QA_PREBUILT="*"
 S=${WORKDIR}
 
 src_unpack() {
