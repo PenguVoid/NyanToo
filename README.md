@@ -9,4 +9,4 @@ Currently in here:
 `games-misc/minecraft-launcher`
 `www-client/firefox`
 
-(The firefox ebuild is a copy of the official gentoo one and is modified to work with clang and llvm v10)
+(The firefox ebuild is a copy of the official gentoo one and is modified to compile with clang and llvm v10)
