@@ -27,7 +27,7 @@ DEPEND="${RDEPEND}
 		gnome-base/gconf
 		x11-libs/libXtst"
 
-S=${WORKDIR}/minecraft-launcher
+S=${WORKDIR}
 
 src_unpack() {
 	unpack_deb ${A}
