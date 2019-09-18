@@ -7,3 +7,4 @@ currently in here
 ```
 net-im/discord-canary
 games-misc/minecraft-launcher
+www-client/firefox (this ebuild is a copy of the official gentoo one and is modified to work with clang v10)
