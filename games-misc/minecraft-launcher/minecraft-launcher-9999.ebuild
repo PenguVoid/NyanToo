@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit eutils desktop
+inherit unpacker toolchain-funcs xdg-utils chromium-2
 
 DESCRIPTION="Official Minecraft Launcher"
 HOMEPAGE="https://www.minecraft.net"
