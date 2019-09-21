@@ -3,7 +3,8 @@
 Fix lto builds of sandbox on linux
 
 diff --git a/security/sandbox/linux/moz.build b/security/sandbox/linux/moz.build
-    b/security/sandbox/linux/moz.build
+--- a/security/sandbox/linux/moz.build
++++ b/security/sandbox/linux/moz.build
 @@ -95,17 +95,17 @@ if CONFIG['CC_TYPE'] in ('clang', 'gcc')
      CXXFLAGS += ['-Wno-shadow']
      SOURCES['../chromium/sandbox/linux/services/syscall_wrappers.cc'].flags += [
@@ -13,7 +14,8 @@ diff --git a/security/sandbox/linux/moz.build b/security/sandbox/linux/moz.build
  # gcc lto likes to put the top level asm in syscall.cc in a different partition
  # from the function using it which breaks the build.  Work around that by
  # forcing there to be only one partition.
- for f in CONFIG['MOZ_LTO_CFLAGS']:
+-for f in CONFIG['OS_CXXFLAGS']:
++for f in CONFIG['MOZ_LTO_CFLAGS']:
      if f.startswith('-flto') and CONFIG['CC_TYPE'] != 'clang':
          LDFLAGS += ['--param', 'lto-partitions=1']
  
@@ -22,6 +24,3 @@ diff --git a/security/sandbox/linux/moz.build b/security/sandbox/linux/moz.build
  
  LOCAL_INCLUDES += ['/security/sandbox/linux']
  LOCAL_INCLUDES += ['/security/sandbox/chromium-shim']
-
-
- 
