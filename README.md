@@ -8,5 +8,6 @@ Currently in here:
 `net-im/discord-canary`
 `games-misc/minecraft-launcher`
 `www-client/firefox`
+`net-vpn/logmein-hamachi`
 
 (The firefox ebuild is a copy of the official gentoo one and is modified to compile with clang and llvm v10)
