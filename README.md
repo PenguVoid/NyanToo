@@ -13,4 +13,4 @@ The Minecraft 9999 ebuild is experimental and won't compile currently! it's only
 
 Versions:
 
-`Firefox 69.0.1` `Discord Canary 0.0.96` `Hamachi 2.1.0.203`
+`Firefox 69.0.1` `Discord Canary 0.0.96` `Hamachi 2.1.0.203` `Minecraft 2.1.5965`
