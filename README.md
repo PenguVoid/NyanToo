@@ -6,11 +6,14 @@ If you wanna add my repo for whatever reason:
 
 Currently in here:
 
-`net-im/discord-canary` `games-misc/minecraft-launcher` `www-client/firefox` `net-vpn/logmein-hamachi`
+- net-im/discord-canary   
+   - Discord Canary 0.0.96
+- games-misc/minecraft-launcher
+   - Minecraft 2.1.5965
+- www-client/firefox
+   - Firefox 69.0.1
+- net-vpn/logmein-hamachi
+   - Hamachi 2.1.0.203
 
 (The Firefox ebuild is a copy of the official Gentoo one and is modified to compile with clang and llvm v10.
 The Minecraft 9999 ebuild is experimental and won't compile currently! it's only to serve as testing ground for me to learn about ebuilds!)
-
-Versions:
-
-`Firefox 69.0.1` `Discord Canary 0.0.96` `Hamachi 2.1.0.203` `Minecraft 2.1.5965`
