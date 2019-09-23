@@ -10,7 +10,7 @@ If you wanna add my repo for whatever reason:
 ```
 layman -o https://raw.githubusercontent.com/PenguVoid/NyanToo/master/repository.xml -f -a NyanToo
 ```
-### repos.conf
+### repos.conf:
 ```
 [NyanToo]
 location = /usr/local/NyanToo
