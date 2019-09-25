@@ -5,7 +5,7 @@ EAPI=7
 
 DESCRIPTION="A simple little tool for managing portage in a more simple manner"
 HOMEPAGE="https://github.com/PenguVoid/Bastet"
-SRC_URI="https://github.com/PenguVoid/Bastet/archive/${PV}.tar.gz"
+SRC_URI="https://github.com/PenguVoid/Bastet/archive/${P}.tar.gz"
 KEYWORDS="~amd64"
 
 LICENSE="BSD-2"
