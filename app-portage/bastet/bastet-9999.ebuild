@@ -3,10 +3,11 @@
 
 EAPI=7 
 
+inherit git-r3
+
 DESCRIPTION="A simple little tool for managing portage in a more simple manner"
 HOMEPAGE="https://github.com/PenguVoid/bastet"
-SRC_URI="https://github.com/PenguVoid/bastet/archive/${PV}.tar.gz"
-KEYWORDS="~amd64"
+EGIT_REPO_URI="https://github.com/PenguVoid/bastet.git"
 
 LICENSE="BSD-2"
 SLOT="0"
