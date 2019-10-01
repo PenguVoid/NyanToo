@@ -11,9 +11,10 @@ EGIT_REPO_URI="https://github.com/PenguVoid/bastet.git"
 
 LICENSE="BSD-2"
 SLOT="0"
-IUSE="eix live-update"
+IUSE="eix live-update layman"
 
 RDEPEND="
     eix? ( app-portage/eix )
     live-update? ( app-portage/smart-live-rebuild )
+	layman? ( app-portage/layman )
 "
