@@ -25,6 +25,7 @@ auto-sync = yes
 - www-client/firefox (69.0.1)
 - net-vpn/logmein-hamachi (2.1.0.203)
 - app-portage/bastet (9999)
+- net-misc/zerotier (1.4.6)
 
 (The Firefox ebuild is a copy of the official Gentoo one and is modified to compile with clang and llvm v10.
 The Minecraft 9999 ebuild is experimental and won't compile currently! it's only to serve as testing ground for me to learn about ebuilds!)
