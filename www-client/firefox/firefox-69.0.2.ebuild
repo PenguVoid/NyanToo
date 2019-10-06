@@ -38,7 +38,7 @@ if [[ "${PV}" == *_rc* ]]; then
 	MOZ_SRC_URI="${MOZ_HTTP_URI}/source/${PN}-${MOZ_PV}.source.tar.xz -> $P.tar.xz"
 fi
 
-LLVM_MAX_SLOT=10
+LLVM_MAX_SLOT=9
 
 inherit check-reqs eapi7-ver flag-o-matic toolchain-funcs eutils \
 		gnome2-utils llvm mozcoreconf-v6 pax-utils xdg-utils \
@@ -127,7 +127,7 @@ DEPEND="${CDEPEND}
 	>=sys-devel/binutils-2.30
 	sys-apps/findutils
 	|| (
-        (
+		(
 			sys-devel/clang:10
 			!clang? ( sys-devel/llvm:10 )
 			clang? (
@@ -174,7 +174,6 @@ DEPEND="${CDEPEND}
 		)
 	)
 	pulseaudio? ( media-sound/pulseaudio )
-	>=virtual/cargo-1.35.0
 	>=virtual/rust-1.35.0
 	wayland? ( >=x11-libs/gtk+-3.11:3[wayland] )
 	amd64? ( >=dev-lang/yasm-1.1 virtual/opengl )
@@ -256,7 +255,7 @@ pkg_setup() {
 
 pkg_pretend() {
 	# Ensure we have enough disk space to compile
-	if use pgo || use debug || use test ; then
+	if use pgo || use lto || use debug || use test ; then
 		CHECKREQS_DISK_BUILD="8G"
 	else
 		CHECKREQS_DISK_BUILD="4G"
@@ -779,4 +778,4 @@ pkg_postinst() {
 pkg_postrm() {
 	xdg_desktop_database_update
 	xdg_icon_cache_update
-} 
+}
