@@ -23,5 +23,5 @@ auto-sync = yes
 - net-im/discord-canary (0.0.102)
 - games-util/parsec (150.28)
 - net-vpn/logmein-hamachi (2.1.0.203)
-- app-portage/bastet (9999)
+- app-portage/bastet (9999) - (The bastet ebuild is currently broken!)
 - net-misc/zerotier (1.4.6)
